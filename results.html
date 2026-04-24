@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results & Testimonials | Hotfro Africa</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .results-hero {
+            background: linear-gradient(rgba(45, 90, 39, 0.85), rgba(45, 90, 39, 0.85)), 
+                        url('https://images.unsplash.com/photo-1595475884995-58320df5416b?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .comparison-container {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .comparison-card {
+            background: var(--light-grey);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .image-split {
+            display: flex;
+            gap: 5px;
+            background: #fff;
+            padding: 10px;
+        }
+
+        .image-split div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-split img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .image-label {
+            display: block;
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--primary-green);
+            text-transform: uppercase;
+        }
+
+        .result-detail {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+
+        .review-card {
+            background: var(--light-green);
+            padding: 40px 30px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .review-card i.fa-quote-left {
+            font-size: 2rem;
+            color: rgba(45, 90, 39, 0.2);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .stars {
+            color: #ffb400;
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--dark-grey);
+        }
+
+        .reviewer-name {
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+
+        .reviewer-location {
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">Hotfro <span>Africa</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="results.html" class="active">Results</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="results-hero">
+        <div class="container">
+            <h1>Real Results from Real Customers</h1>
+            <p>Transparency is our priority. See how Hotfro Africa is transforming hair across Ghana.</p>
+        </div>
+    </section>
+
+    <section class="comparison-container">
+        <div class="container">
+            <h2 class="section-title">Visual Transformations</h2>
+            <div class="comparison-grid">
+                
+                <div class="comparison-card">
+                    <div class="image-split">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1595475884995-58320df5416b?auto=format&fit=crop&q=80&w=400" alt="Before">
+                            <span class="image-label">Month 0</span>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=400" alt="After">
+                            <span class="image-label">Month 4</span>
+                        </div>
+                    </div>
+                    <div class="result-detail">
+                        <h3>Edges Recovery</h3>
+                        <p>Focus: Growth Booster & Daily Scalp Massage</p>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="image-split">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&q=80&w=400" alt="Before">
+                            <span class="image-label">January</span>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c11bc?auto=format&fit=crop&q=80&w=400" alt="After">
+                            <span class="image-label">June</span>
+                        </div>
+                    </div>
+                    <div class="result-detail">
+                        <h3>Volume & Length</h3>
+                        <p>Focus: Honey Shampoo Set & Growth Pomade</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">What They're Saying</h2>
+        <div class="testimonial-page-grid">
+            
+            <div class="review-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"I've tried every imported brand for my dandruff, but nothing worked until I tried the Hotfro Honey Shampoo. Within 3 washes, the itching stopped completely. My hair feels so soft now!"</p>
+                <p class="reviewer-name">Abena Mansa</p>
+                <p class="reviewer-location">Kumasi, Ashanti Region</p>
+            </div>
+
+            <div class="review-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"The Growth Booster is magic in a bottle. My edges were thinning from tight braids, but they are filling back in so quickly. I'm ordering for my sister too!"</p>
+                <p class="reviewer-name">Sister Efua</p>
+                <p class="reviewer-location">East Legon, Accra</p>
+            </div>
+
+            <div class="review-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Finally a Ghanaian brand that understands 4C hair. The Growth Pomade keeps my hair moisturized for days, which has really stopped the breakage I used to have."</p>
+                <p class="reviewer-name">Araba J.</p>
+                <p class="reviewer-location">Takoradi</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Start your own success story today</h2>
+            <a href="https://wa.me/233242590695" class="btn btn-white">Order on WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Hotfro Africa. Natural results you can see.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

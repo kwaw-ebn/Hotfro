@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Care Blog | Hotfro Africa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-header {
+            background: var(--light-green);
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        .blog-container { padding: 60px 0; }
+        .blog-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .blog-post-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eee;
+        }
+        .blog-post-card:hover { transform: translateY(-5px); }
+        .blog-post-card img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-post-content { padding: 20px; }
+        .blog-category { color: var(--primary-green); font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+        .blog-post-content h3 { margin: 10px 0; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">Hotfro <span>Africa</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="results.html">Testimonials</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1>The Natural Hair Library</h1>
+            <p>Expert tips and herbal secrets for your hair journey.</p>
+        </div>
+    </section>
+
+    <section class="blog-container container">
+        <div class="blog-list-grid">
+            <div class="blog-post-card">
+                <img src="assets/hair-breakage.jpg" alt="Hair Breakage">
+                <div class="blog-post-content">
+                    <span class="blog-category">Maintenance</span>
+                    <h3>How to stop hair breakage</h3>
+                    <p>Discover why your ends are snapping and how our Pomade can help.</p>
+                    <a href="blog-breakage.html" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-post-card">
+                <img src="assets/natural-hair.jpg" alt="Growth Routine">
+                <div class="blog-post-content">
+                    <span class="blog-category">Growth</span>
+                    <h3>Best routine for natural hair growth</h3>
+                    <p>A simple 4-step weekly plan to see real results in months.</p>
+                    <a href="blog-growth.html" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-post-card">
+                <img src="assets/dandruff.jpg" alt="Dandruff">
+                <div class="blog-post-content">
+                    <span class="blog-category">Scalp Care</span>
+                    <h3>How to treat dandruff naturally</h3>
+                    <p>Clear your scalp using our Honey Shampoo and herbal rinses.</p>
+                    <a href="blog-dandruff.html" class="btn btn-outline" style="margin-top: 15px; display: inline-block;">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px 0; background: #f9f9f9;">
+        <p>© 2026 Hotfro Africa</p>
+    </footer>
+</body>
+</html>
